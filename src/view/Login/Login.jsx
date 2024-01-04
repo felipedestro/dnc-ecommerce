@@ -1,14 +1,15 @@
 import React from 'react';
 import './index.scss';
 import { Link } from 'react-router-dom';
+import Header from '../../components/Header/Header'
 
 
-const login = () => {
+const Login = () => {
   return (
-    <div>
-        Login
-    </div>
+    <section className="login">
+      <Header />
+    </section>
   );
 }
 
-export default login
+export default Login;
