@@ -1,0 +1,147 @@
+@use "../../sass/variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600&display=swap");
+
+.product-detail {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 100px;
+	flex-shrink: 1;
+	padding-bottom: 50px;
+
+	&__product {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+
+		img {
+			border-radius: 5px 5px 0 0;
+			width: 326px;
+		}
+	}
+
+	&__product__card {
+		width: 330px;
+		height: 306px;
+
+		border: 2px solid $border-input-color;
+		border-radius: 8px;
+
+		p {
+			text-align: center;
+			margin-top: 14px;
+		}
+	}
+
+	&__product__description {
+		h1 {
+			font-size: 25px;
+			font-weight: 500;
+			margin-bottom: 17px;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 30px;
+		}
+
+		border-bottom: 1px solid $border-background-card;
+	}
+
+	&__information {
+		h1 {
+			text-align: center;
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 20px;
+
+			border-bottom: 1px solid $border-background-card;
+			padding-bottom: 40px;
+		}
+
+		h3 {
+			margin-top: 55px;
+			font-family: "Montserrat", sans-serif;
+			font-size: 30px;
+			font-weight: 600;
+		}
+
+		button {
+			margin-top: 100px;
+
+			width: 638px;
+			height: 47px;
+			border: none;
+			border-radius: 10px;
+			background: $contrast-color;
+			font-size: 25px;
+			font-weight: 700;
+			line-height: 20px;
+		}
+
+		a {
+			text-decoration: none;
+			color: $white;
+		}
+	}
+
+	&__information__colors {
+		margin-top: 29px;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		h4 {
+			font-size: 25px;
+			font-weight: 400;
+			font-style: normal;
+		}
+	}
+
+	&__information__colors__color {
+		display: flex;
+		gap: 15px;
+
+		p {
+			width: 64px;
+			height: 64px;
+			border-radius: 10px;
+		}
+	}
+
+	&__information__sizes {
+		margin-top: 29px;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		h4 {
+			font-size: 25px;
+			font-weight: 400;
+			font-style: normal;
+		}
+	}
+
+	&__information__sizes_size {
+		display: flex;
+		gap: 15px;
+
+		p {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: 64px;
+			height: 64px;
+			border-radius: 10px;
+			border: 2px solid $black;
+
+			font-size: 30px;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 23px;
+			text-transform: uppercase;
+		}
+	}
+}
