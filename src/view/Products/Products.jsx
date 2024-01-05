@@ -15,7 +15,9 @@ function Products({ data }) {
 			<div className="products__search">
 				<Search />
 			</div>
-			<ProductDetail data={selectedProduct} />
+			<div className="products__product-detail">
+				<ProductDetail data={selectedProduct} />
+			</div>
 		</div>
 	);
 }

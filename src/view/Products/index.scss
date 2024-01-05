@@ -1,7 +1,13 @@
 @use "../../sass/variables" as *;
 
 .products {
+	padding-bottom: 60px;
+
 	&__search {
 		margin-top: 60px;
+	}
+
+	&__product-detail {
+		margin-top: 126px;
 	}
 }
