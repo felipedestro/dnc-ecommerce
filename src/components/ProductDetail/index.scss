@@ -91,10 +91,14 @@
 		flex-direction: column;
 		gap: 25px;
 
-		h4 {
+		p {
 			font-size: 25px;
 			font-weight: 400;
 			font-style: normal;
+		}
+
+		span {
+			text-transform: capitalize;
 		}
 	}
 
@@ -115,7 +119,7 @@
 		flex-direction: column;
 		gap: 25px;
 
-		h4 {
+		p {
 			font-size: 25px;
 			font-weight: 400;
 			font-style: normal;

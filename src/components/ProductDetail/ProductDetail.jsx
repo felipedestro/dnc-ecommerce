@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
-import { key } from "localforage";
+import { useState } from "react";
 
 function ProductDetail({ data }) {
 	return (
@@ -20,7 +20,16 @@ function ProductDetail({ data }) {
 				<h1>Informações Sobre o Produto</h1>
 				<h3>{data.price}</h3>
 				<span className="product-detail__colors">
-					<h4>Cor:</h4>
+					<p>
+						Cor: {""}
+						{data.colors.map((color, index) =>
+							index + 1 < data.colors.length ? (
+								<span key={index}>{`${color}, `}</span>
+							) : (
+								<span key={index}>{color}</span>
+							)
+						)}
+					</p>
 					<div className="product-detail__colors__color">
 						{data.colors.map((color, index) =>
 							color === "white" ? (
@@ -34,7 +43,7 @@ function ProductDetail({ data }) {
 					</div>
 				</span>
 				<span className="product-detail__sizes">
-					<h4>Tamanho:</h4>
+					<p>Tamanho:</p>
 					<div className="product-detail__sizes_size">
 						{data.sizes.map((size, index) => (
 							<p key={index}>{size}</p>
