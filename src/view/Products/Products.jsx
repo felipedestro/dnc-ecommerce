@@ -8,14 +8,13 @@ import ProductDetail from "../../components/ProductDetail/ProductDetail";
 function Products({ data }) {
 	const { productId } = useParams();
 	const selectedProduct = data.find((product) => product.id == productId);
-	console.log(selectedProduct);
 	return (
 		<div className="products">
 			<HeaderMenu />
 			<div className="products__search">
 				<Search />
 			</div>
-			<div className="products__product-detail">
+			<div className="products__detail">
 				<ProductDetail data={selectedProduct} />
 			</div>
 		</div>
