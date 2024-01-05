@@ -1,1 +1,7 @@
 @use "../../sass/variables" as *;
+
+.products {
+	&__search {
+		margin-top: 60px;
+	}
+}
