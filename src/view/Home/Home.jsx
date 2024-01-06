@@ -13,7 +13,7 @@ const Home = ({ data }) => {
 			</div>
 			<div className="home__products">
 				{data.map((product) => (
-					<ProductsCard key={product.id} data={product} />
+					<ProductsCard data={product} />
 				))}
 			</div>
 		</div>

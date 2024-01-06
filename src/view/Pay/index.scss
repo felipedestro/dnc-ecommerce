@@ -1,1 +1,125 @@
 @use "../../sass/variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600&display=swap");
+
+.pay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 150px;
+
+	padding-bottom: 60px;
+	margin-top: 100px;
+
+	&__left {
+		form label {
+			font-size: 30px;
+			font-weight: 400;
+			line-height: normal;
+			color: $black;
+		}
+
+		form input {
+			width: 500px;
+			height: 52px;
+			padding: 10px;
+			font-size: 20px;
+			border-radius: 10px;
+			border: 2px solid $border-background-card;
+			outline: none;
+			margin-top: 7px;
+			margin-bottom: 47px;
+		}
+	}
+
+	&__payments {
+		display: flex;
+		flex-direction: column;
+		margin-top: 9px;
+
+		h1 {
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 400;
+			margin-bottom: 22px;
+		}
+
+		span {
+			display: flex;
+			align-items: center;
+			gap: 17px;
+			margin-bottom: 16px;
+		}
+
+		input[type="checkbox"] {
+			width: 25px;
+			height: 25px;
+			border-radius: 8px;
+			border: 2px solid $border-background-card;
+		}
+
+		label {
+			font-size: 26px;
+			font-weight: 400;
+		}
+	}
+
+	button {
+		margin-top: 107px;
+		width: 500px;
+		height: 48px;
+		border-radius: 6px;
+		border: none;
+		background-color: $contrast-color;
+
+		font-size: 18px;
+		font-weight: 800;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: column;
+
+		width: 572px;
+		height: 287px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		padding: 27px 47px;
+
+		h1 {
+			font-size: 30px;
+			font-weight: 600;
+		}
+
+		p {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		p:nth-child(2) {
+			margin-top: 48px;
+			padding-bottom: 38px;
+			border-bottom: 1px solid $border-background-card;
+		}
+
+		p:nth-child(3) {
+			margin-top: 23px;
+		}
+
+		p span:first-child {
+			font-size: 25px;
+			font-weight: 400;
+		}
+
+		p span:last-child {
+			font-size: 30px;
+			font-weight: 600;
+			text-align: right;
+			font-family: "Montserrat";
+		}
+	}
+}
