@@ -46,11 +46,11 @@ function Pay({ data }) {
 				</div>
 				<div className="pay__right">
 					<h1>Resumo Pedido</h1>
-					<p className="pay__product">
+					<p>
 						<span>Produtos (1):</span>
 						<span>{selectProduct.price}</span>
 					</p>
-					<p className="pay__price">
+					<p>
 						<span>Total:</span>
 						<span>{selectProduct.price}</span>
 					</p>
